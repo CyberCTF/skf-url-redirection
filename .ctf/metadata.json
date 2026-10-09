@@ -4,11 +4,5 @@
   "question": "Build a link on the trusted site that sends the visitor to a domain you choose (open redirect).",
   "category": "WEB",
   "difficulty": 1,
-  "evidence_kind": "SECRET",
-  "capabilities": [
-    "open-redirect",
-    "phishing",
-    "http",
-    "client-side"
-  ]
+  "evidence_kind": "SECRET"
 }
