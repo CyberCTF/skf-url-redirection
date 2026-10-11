@@ -1,0 +1,42 @@
+{
+  "objectives": [
+    {
+      "key": "main",
+      "title": "Read the flag",
+      "prompt": "Abuse the redirect endpoint and retrieve the flag (/ctf/flag).",
+      "check": {
+        "evidence": "SECRET",
+        "format": "FLAG{%s}"
+      },
+      "dev": "FLAG{dev-skf-url-redirection}",
+      "hints": [
+        "The site moved, and its redirect endpoint takes the destination from the URL.",
+        "Read about unvalidated redirects and forwards."
+      ],
+      "steps": [
+        {
+          "key": "param",
+          "title": "Find the input",
+          "prompt": "Which query parameter holds the destination? (name)",
+          "check": {
+            "answer": [
+              "newurl"
+            ]
+          }
+        },
+        {
+          "key": "class",
+          "title": "Name the weakness",
+          "prompt": "What class of vulnerability is this?",
+          "check": {
+            "answer": [
+              "open redirect",
+              "unvalidated redirect",
+              "url redirection"
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -1,7 +1,7 @@
 {
   "title": "OWASP SKF Open Redirect",
   "description": "A Flask site that moved: its /redirect endpoint sends the browser to the URL given in the newurl parameter, without checking it.",
-  "question": "Build a link on the trusted site that sends the visitor to a domain you choose (open redirect).",
+  "question": "Build a link on the trusted site that sends the visitor to a domain you choose (open redirect). The flag is in /ctf/flag; client-side lab.",
   "category": "WEB",
   "difficulty": 1,
   "evidence_kind": "SECRET"
